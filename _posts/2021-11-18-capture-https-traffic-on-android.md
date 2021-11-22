@@ -1,4 +1,8 @@
-# Android APP抓包
+---
+layout: post
+title: Android APP抓包
+date: 2021-11-18
+---
 
 在介绍Android APP抓包之前，我们需要先学习一下浏览器抓包，因为APP抓包是在浏览器抓包的基础上增加了绕过SSL Pinning的操作。
 

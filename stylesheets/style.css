@@ -32,3 +32,74 @@
   padding-left: 3.8rem;
 }
 /* end Markdown styles */
+section.post {
+  margin: 0 -60px;
+  text-align: left;
+  border-top: 0;
+  padding: 0; }
+  section.post > * {
+    padding: 0 60px; }
+  section.post ul ul, section.post ul ol, section.post ol ul, section.post ol ol {
+    margin-left: 20px;
+    padding: 0; }
+  section.post h1 {
+    text-align: center;
+    line-height: 1.5em;
+    margin-bottom: 60px; }
+    section.post h1 .date {
+      color: #d0d0d0;
+      font-size: 10px; }
+  section.post iframe {
+    width: 100%; }
+  section.post iframe, section.post img {
+    padding: 0;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
+
+section.post, section > p {
+  font-size: 14px;
+  line-height: 1.6em; }
+  section.post *, section > p * {
+    max-width: 100%; }
+  section.post em strong, section > p em strong {
+    background-color: #ffffee;
+    padding: 0 2px; }
+  section.post blockquote, section > p blockquote {
+    -webkit-transition: all, 0.3s;
+    -moz-transition: all, 0.3s;
+    -ms-transition: all, 0.3s;
+    -o-transition: all, 0.3s;
+    transition: all, 0.3s;
+    color: #606060;
+    background: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    padding: 15px 60px; }
+    section.post blockquote:hover, section > p blockquote:hover {
+      color: #454545; }
+    section.post blockquote:hover:before, section > p blockquote:hover:before {
+      color: #b8cec7; }
+    section.post blockquote:before, section > p blockquote:before {
+      left: -3px; }
+    section.post blockquote:after, section > p blockquote:after {
+      right: -2px; }
+    section.post blockquote:before, section.post blockquote:after, section > p blockquote:before, section > p blockquote:after {
+      content: "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^";
+      font-size: 24px;
+      overflow: hidden;
+      position: absolute;
+      top: 0px;
+      bottom: 0px;
+      line-height: 0.4em;
+      word-break: break-all;
+      color: #d0dfda;
+      display: block;
+      width: 7px !important;
+      white-space: normal; }
+  section.post li .highlight, section > p li .highlight {
+    padding: 0 10px; }
+  section.post li p, section > p li p {
+    margin-bottom: 5px; }
