@@ -19,4 +19,4 @@ links:
 permalink:        /:title
 defaults:
   - values:
-      layout: "default"
+      layout: "post"
