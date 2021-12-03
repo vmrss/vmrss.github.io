@@ -47,9 +47,15 @@ SSL Pinning就是证书绑定，是将服务端证书预置到APP，每次请求
 ### 安装burpsuite CA证书
 
 1. 浏览器127.0.0.1:8080 或burpsuite 下载drt或crt格式证书.
-2. openssl x509 -inform DER -subject_hash_old -in cert-der.crt |head -1  得到HASH值
-3. 修改证书名为   hash值.0     9a5ba575.0
-4. 上传证书到 /data/36rdf4td.0
+
+2. ```
+   openssl x509 -inform DER -subject_hash_old -in cert-der.crt |head -1  得到HASH值
+   ```
+
+3. 修改证书名为   hash值.0     9a5ba575.0 
+
+4. 上传证书到 /data/9a5ba575.0
+
 5. 复制到系统目录下, mv data/9a5ba575.0 /system/etc/security/cacerts (若:only-read ,执行 mount -o rw, remount /system )
 
 ### 开始抓包
